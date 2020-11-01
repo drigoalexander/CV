@@ -109,12 +109,13 @@ body{
     font-size: 40px;
     padding-top: 250px;
     margin-bottom: 300px;
-    cursor: all-scroll;
+    cursor: auto;
     transition: .5s;
 }
 
 .welcome:hover{
     color: black;
+    transform: translateY(-20px);
 }
 
 .fonts{
@@ -358,46 +359,6 @@ table{
     font-size: 20px;
     font-family: MR;
 }
-/*
-.quotes{
-    font-family: MB;
-    position: relative;
-    right: 189px;
-    font-size: 40px;
-}
-
-.color{
-    font-family: MR;
-    position: relative;
-    font-size: 40px;
-    top: -89px;
-    right: 108px;
-}
-
-.quotes2{
-    font-family: MR;
-    position: relative;
-    font-size: 40px;
-    bottom: 100px;
-    right: 98px;
-}
-
-.quotes3{
-    font-family: MR;
-    position: relative;
-    font-size: 40px;
-    bottom: 109px;
-    right: 23px;
-}
-
-.soul{
-    font-family: MB;
-    font-size: 40px;
-    position: relative;
-    bottom: 198px;
-    left: 253px;
-}  */
-
 
 .garis{
     position: relative;
