@@ -104,10 +104,17 @@ body{
 }
 
 .welcome{
+    color: #ffffff;
     font-family: MB;
     font-size: 40px;
     padding-top: 250px;
     margin-bottom: 300px;
+    cursor: all-scroll;
+    transition: 1s;
+}
+
+.welcome:hover{
+    color: black;
 }
 
 .fonts{
