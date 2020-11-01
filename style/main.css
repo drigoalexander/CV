@@ -110,7 +110,7 @@ body{
     padding-top: 250px;
     margin-bottom: 300px;
     cursor: all-scroll;
-    transition: 1s;
+    transition: .5s;
 }
 
 .welcome:hover{
@@ -371,7 +371,7 @@ table{
     position: relative;
     font-size: 40px;
     top: -89px;
-    right: 90px;
+    right: 108px;
 }
 
 .quotes2{
