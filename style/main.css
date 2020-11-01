@@ -1,0 +1,400 @@
+/*install font*/
+
+@font-face{
+    font-family: MB;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face{
+    font-family: MR;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face{
+    font-family: Fenix;
+    src: url(../fonts/Fenix-Regular.ttf);
+}
+
+
+
+body{
+    margin: 0;
+}
+
+.navbar{
+    background: #2a2e60;
+    width: 100%;
+    overflow: hidden;
+    
+    
+}
+
+.container{
+    width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.navbar .logo{
+    float: left;
+    padding-bottom: 50;
+    color: #d04b3b;
+    position: relative;
+    left: 150px;
+}
+
+.navbar .isi{
+    float: right;
+    font-size: 18px;
+    margin-top: 33px;
+    
+}
+
+.navbar .isi li{
+    position:relative;
+    float: right;
+    margin-left: 70px;
+    display: block;
+    right: 0;
+    
+}
+
+
+.navbar .isi li a{
+    text-decoration: none;
+    color: #d04b3b;
+    font-family: MR;
+    
+}
+
+.navbar .isi li a:hover{
+    color: #ffffff;
+    
+}
+
+#awal{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 150px;
+
+}
+
+#awal .pembuka{
+
+    text-align: center;
+}
+
+#awal .pembuka .nama{
+
+    font-family: MB;
+    text-shadow: #2a2e60;
+}
+
+#awal .pembuka .deskripsi{
+    margin-top: 50px;
+    font-family: MR;
+    text-align: center;
+}
+
+
+.fonts{
+    font-family: Fenix;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #d04b3b;
+}
+
+.kontener{
+    position: relative;
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#Skills {
+   
+    text-align: center;
+    overflow: hidden;
+    
+    
+}
+
+.sekil{
+    
+    margin-left: 0px;
+    font-family: MB;
+    margin-top: 80px;
+    font-size: 32px;
+}
+
+.kontener .card{
+    position: relative;
+    width: 250px;
+    background: #2a2e60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.kontener .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.5);
+}
+
+.kontener .card:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.03);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px #000000;
+    background: #2a2e60;
+    z-index: 1000;
+}
+
+.percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.percent .number h2{
+    color: #2a2e60;
+    font-weight: 700;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.card:hover .percent .number h2{
+    color: #d04b3b;
+    font-size: 40px;
+    
+}
+
+
+
+svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+
+}
+
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #2a2e60;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px,5px);
+}
+
+svg circle:nth-child(2)
+{
+    
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.card:nth-child(1) svg circle:nth-child(2)
+{
+    stroke-dashoffset: -150;
+    stroke: #d04b3b
+}
+
+.card:nth-child(2) svg circle:nth-child(2)
+{
+    stroke-dashoffset: -100;
+    stroke: #d04b3b
+}
+
+.card:nth-child(3) svg circle:nth-child(2)
+{
+    stroke-dashoffset: -50;
+    stroke: #d04b3b
+}
+
+#Academic{
+    margin-top:100px;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+#Academic .Akademic{
+    font-family: MB;
+    position:relative;
+  
+    font-size: 30px;
+
+}
+
+table{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    padding-top: 100px;
+   
+}
+
+.tr{
+    font-size: 32px;
+}
+
+.tebel{
+    font-size: 20px;
+    position: relative;
+   
+}
+.tr .ele{
+    position: relative;
+    left: -150px;
+    top: 120px;
+}
+
+.tr .ju{
+    position: relative;
+    right: -14px;
+    top: 120px;
+}
+
+.tr .sen{
+    position: relative;
+    left: 150px;
+    top: 120px;
+
+}
+
+
+.tebel .asd{
+    position: relative;
+    left: -150px;
+    top: 150px;
+}
+
+.tebel .qwe{
+    position: relative;
+    right: -15px;
+    top: 150px;
+    
+}
+
+.tebel .zxc{
+    position: relative;
+    left:  150px;
+    top: 150px;
+    
+}
+
+.isiaka{
+    margin-bottom: 400px;
+}
+
+#Personality{
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.Person{
+    font-size: 32px;
+    padding-bottom: 50px;
+    font-family: MB;
+}
+
+.video{
+    position: relative;
+    transform: rotate(-90deg);
+    left: -400px;
+    bottom: -280px;
+    font-size: 20px;
+    font-family: MR;
+}
+
+.quotes{
+    font-family: MB;
+    position: relative;
+    right: 189px;
+    font-size: 40px;
+}
+
+.color{
+    font-family: MR;
+    position: relative;
+    font-size: 40px;
+    top: -89px;
+    right: 90px;
+}
+
+.quotes2{
+    font-family: MR;
+    position: relative;
+    font-size: 40px;
+    bottom: 100px;
+    right: 98px;
+}
+
+.quotes3{
+    font-family: MR;
+    position: relative;
+    font-size: 40px;
+    bottom: 109px;
+    right: 23px;
+}
+
+.soul{
+    font-family: MB;
+    font-size: 40px;
+    position: relative;
+    bottom: 198px;
+    left: 253px;
+}
+
+
+.garis{
+    position: relative;
+    bottom: 180px;
+}
+.people{
+    font-size: 30px;
+    font-family: MR;
+    position: relative;
+    bottom: 150px;
+    right: -140px;
+}
+
+
+.akhir{
+    width: 100% ;
+    text-align: center;
+    margin-top: 20%;
+    font-family: Fenix;
+}
