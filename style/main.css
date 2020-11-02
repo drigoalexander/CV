@@ -22,7 +22,7 @@ body{
 }
 
 .navbar{
-    background: #2a2e60;
+    background: linear-gradient(#ece9e6,#ffffff);
     width: 100%;
     overflow: hidden;
     
@@ -38,7 +38,7 @@ body{
 .navbar .logo{
     float: left;
     padding-bottom: 50;
-    color: #d04b3b;
+    color: #283048;
     position: relative;
     left: 150px;
 }
@@ -56,24 +56,39 @@ body{
     margin-left: 70px;
     display: block;
     right: 0;
+
     
 }
 
 
 .navbar .isi li a{
     text-decoration: none;
-    color: #d04b3b;
+    color: #928dab;
     font-family: MR;
     
 }
 
 .navbar .isi li a:hover{
-    color: #ffffff;
+    color: #000000;
     
 }
 
-#awal{
+.animasinav::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    cursor: pointer;
+    transition: width .3s;
+}
+
+.animasinav:hover::after{
     width: 100%;
+    transition: width .3s;
+}
+
+#awal{
     margin-top: 100px;
     margin-bottom: 150px;
 
@@ -81,19 +96,48 @@ body{
 
 .nama{
     font-size: 40px;
+    color: #928dab;
+    font-family: MB;
+    
 }
+
+.welcome{
+    width: 100%;
+    height: fit-content;
+    color: #ffffff;
+    text-shadow: -1px 1px 5px #ffffff;
+    font-family: MB;
+    font-size: 60px;
+    padding-top: 500px;
+    margin-bottom: 500px;
+    line-height: 50%;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.welcome:hover{
+    color: black;
+    transform: translateY(-20px);
+    text-shadow: -1px 1px 2px #928dab;
+}
+
 
 
 #awal .pembuka{
 
     text-align: center;
+    color: #ffffff;
+    transition: .8s;
 }
 
-#awal .pembuka .nama{
+#awal .pembuka:hover{
 
-    font-family: MB;
-    text-shadow: #2a2e60;
+    color: #928dab;
+    transform: translateY(-10px);
+    cursor: pointer;
 }
+
+
 
 #awal .pembuka .deskripsi{
     padding-top: 40px;
@@ -103,20 +147,8 @@ body{
 
 }
 
-.welcome{
-    color: #ffffff;
-    font-family: MB;
-    font-size: 40px;
-    padding-top: 250px;
-    margin-bottom: 300px;
-    cursor: auto;
-    transition: .5s;
-}
 
-.welcome:hover{
-    color: black;
-    transform: translateY(-20px);
-}
+
 
 .fonts{
     font-family: Fenix;
@@ -124,7 +156,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color: #d04b3b;
+    color: #928dab;
 }
 
 .kontener{
@@ -144,17 +176,15 @@ body{
 }
 
 .sekil{
-    
-    margin-left: 0px;
     font-family: MB;
-    margin-top: 80px;
     font-size: 32px;
+    
 }
 
 .kontener .card{
     position: relative;
     width: 250px;
-    background: #2a2e60;
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,8 +217,8 @@ body{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    box-shadow: inset 0 0 20px #000000;
-    background: #2a2e60;
+    box-shadow: inset 0 0 5px #928dab;
+    background: #ffffff;
     z-index: 1000;
 }
 
@@ -205,14 +235,14 @@ body{
 }
 
 .percent .number h2{
-    color: #2a2e60;
+    color: #ffffff;
     font-weight: 700;
     font-size: 20px;
     transition: 0.5s;
 }
 
 .card:hover .percent .number h2{
-    color: #d04b3b;
+    color: #928dab;
     font-size: 40px;
     
 }
@@ -231,7 +261,7 @@ svg circle{
     width: 100%;
     height: 100%;
     fill: none;
-    stroke: #2a2e60;
+    stroke: ##928dab;
     stroke-width: 10;
     stroke-linecap: round;
     transform: translate(5px,5px);
@@ -247,19 +277,19 @@ svg circle:nth-child(2)
 .card:nth-child(1) svg circle:nth-child(2)
 {
     stroke-dashoffset: -150;
-    stroke: #d04b3b
+    stroke: #928dab
 }
 
 .card:nth-child(2) svg circle:nth-child(2)
 {
     stroke-dashoffset: -100;
-    stroke: #d04b3b
+    stroke: #928dab
 }
 
 .card:nth-child(3) svg circle:nth-child(2)
 {
     stroke-dashoffset: -50;
-    stroke: #d04b3b
+    stroke: #928dab
 }
 
 #Academic{
@@ -372,6 +402,55 @@ table{
     right: -140px;
 }
 
+
+.boardsosmed{
+    font-family: MR;
+    width: fit-content;
+    height: fit-content;
+}
+
+.isisos{
+    margin-right: 670px;
+    margin-top: 100px;
+    
+    text-align: left;
+    float:right;
+}
+
+.isisos li{
+    display: block;
+    font-size: 15px;
+    padding-top: 20px;
+    
+}
+
+.isisos li a{
+    
+    text-decoration: none;
+    color: #928dab;
+    transition: .5s;
+}
+
+.isisos li a:hover{
+    color: black;
+    transition: .5s;
+}
+
+.anisos::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0px;
+    background-color: black;
+    cursor: pointer;
+    transition: width .5s;
+
+}
+
+.anisos:hover::after{
+    width: 100%;
+    transition: width .5s;
+}
 
 .akhir{
     width: 100% ;
