@@ -261,7 +261,7 @@ svg circle{
     width: 100%;
     height: 100%;
     fill: none;
-    stroke: ##928dab;
+    stroke: #928dab;
     stroke-width: 10;
     stroke-linecap: round;
     transform: translate(5px,5px);
@@ -276,19 +276,19 @@ svg circle:nth-child(2)
 
 .card:nth-child(1) svg circle:nth-child(2)
 {
-    stroke-dashoffset: -150;
+    stroke-dashoffset: calc(440 * (440 - 40)/100);
     stroke: #928dab
 }
 
 .card:nth-child(2) svg circle:nth-child(2)
 {
-    stroke-dashoffset: -100;
+    stroke-dashoffset: calc(440 * (440 - 30)/100);
     stroke: #928dab
 }
 
 .card:nth-child(3) svg circle:nth-child(2)
 {
-    stroke-dashoffset: -50;
+    stroke-dashoffset: calc(440 * (440 - 10)/100);
     stroke: #928dab
 }
 
@@ -459,4 +459,8 @@ table{
     text-align: center;
     margin-top: 20%;
     font-family: Fenix;
+}
+
+html{
+    scroll-behavior: smooth;
 }

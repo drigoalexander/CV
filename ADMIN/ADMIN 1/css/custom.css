@@ -1,0 +1,80 @@
+@font-face{
+    font-family: BLD;
+    src: url(../font/NHaasGroteskTXPro-75Bd.ttf);
+}
+
+@font-face{
+    font-family: Regu;
+    src: url(../font/NHaasGroteskTXPro-65Md.ttf);
+}
+
+body{
+    font-family: Regu;
+    /* background-color: #ffd369; */
+    background-image: url("../testasd.png");
+}
+h1{
+    font-family: BLD;
+    color: #222831;
+}
+
+p{
+    font-family: Regu;
+    font-size: 20px;
+    color: #393e46;
+}
+
+.title .btn-primary{
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: #eeeeee;
+    background-color: transparent;
+    color: #222831;
+    padding: 15px 35px 15px 35px;
+    font-size: 16px;
+    transition: .35s;
+    
+}
+.title .btn-primary:hover{
+    
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: #eeeeee;
+    background-color: #eeeeee;
+    color: #222831;
+    padding: 15px 35px 15px 35px;
+    font-size: 16px;
+    transform: translateY(-5px);
+    
+}
+
+
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+
+ul .btn-primary{
+    border: 1px solid;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border-color: #eeeeee;
+    background-color: transparent;
+    color: #222831;
+    
+    font-size: 16px;
+    transition: .4s;
+}
+ul .btn-primary:hover{
+   background-color: transparent;
+   border: transparent;
+   color: #222831;
+    font-size: 18px;
+    transition: .4s;
+}
+
+.nav-link {
+    color: white !important;
+}
